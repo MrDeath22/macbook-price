@@ -1,0 +1,165 @@
+.container {
+   width: 100%;
+   justify-content: center;
+   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mac-img {
+   margin-bottom: 20px;
+}
+
+.macc {
+   margin-right: 100px;
+}
+
+.img {
+   cursor: pointer;
+   border-radius: 12px;
+   border: 2px solid transparent;
+   transition: border 0.3s ease;
+}
+
+.img:not(:last-child) {
+   margin-right: 10px;
+}
+
+.img:hover {
+   border-radius: 12px;
+   border: 2px solid #111;
+}
+
+.img-active {
+   border-radius: 12px;
+   border: 2px solid #111;
+}
+
+.mac-title {
+   font-weight: 600;
+   font-size: 48px;
+   margin-bottom: 15px;
+}
+
+.mac-desc {
+   font-weight: 600;
+   font-size: 32px;
+   margin-bottom: 30px;
+   color: #555;
+}
+
+.macbook-title {
+   display: block;
+   font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 15px;
+}
+
+.macbook-btn {
+   font-weight: 600;
+   font-size: 16px;
+   padding: 15px 60px;
+   margin-right: 10px;
+   margin-bottom: 30px;
+   border-radius: 15px;
+   border: 1px solid #111;
+}
+
+.macbook-btn--active {
+   border-color: #06c;
+   box-shadow: 0 0 1px 1px #06c;
+}
+
+.btn1tb {
+   margin-right: 0;
+}
+
+.cl-btn {
+   width: 250px;
+   font-size: 12px;
+   padding: 10px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   border-radius: 15px;
+   border: 1px solid #111;
+}
+
+.cl-btn::before {
+   width: 20px;
+   height: 20px;
+   display: block;
+   content: "";
+   margin: 0 auto;
+   margin-bottom: 8px;
+   border-radius: 50%;
+}
+
+.gold::before {
+   background: gold;
+}
+
+.gray::before {
+   background: gray;
+}
+
+.cosmic::before {
+   background: #6a6a6a;
+}
+
+.cl-btn:not(:last-child) {
+   margin-right: 15px;
+}
+
+.cl-btn:last-child {
+   display: block;
+}
+
+.inp {
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.minus {
+   position: relative;
+   left: 4.5px;
+   padding: 7px 20px;
+   border-radius: 8px 0 0 8px;
+   border: 1px solid #ccc;
+   cursor: pointer;
+}
+
+.num {
+   padding: 7px 30px;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+}
+
+.plus {
+   position: relative;
+   right: 4px;
+   padding: 7px 20px;
+   border-radius: 0 8px 8px 0;
+   border: 1px solid #ccc;
+   cursor: pointer;
+}
+
+.count {
+   font-weight: 600;
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+
+.korzinka {
+   width: 530px;
+   display: block;
+   font-size: 16px;
+   padding: 15px;
+   margin-bottom: 10px;
+   border-radius: 13px;
+   color: #fff;
+   background: #06c;
+}
+
+.submit {
+   color: #06c;
+   background: #f3f3f3;
+}
