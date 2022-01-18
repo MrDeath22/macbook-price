@@ -1,4 +1,4 @@
-let imgMain = document.querySelector('.mac-img');
+let imgMain = document.querySelectorAll('.mac-img');
 let imgEl = document.querySelectorAll('.img');
 
 imgEl.forEach(item => {
@@ -7,7 +7,6 @@ imgEl.forEach(item => {
          itemm.classList.remove('img-active');
       })
       item.classList.add('img-active');
-      imgMain.src = item.src;
    })
 })
 
@@ -103,30 +102,18 @@ clBtns.forEach(item => {
 
 // --------------------------
 
-let clMain = [
-   'https://cdn.macbro.uz/macbro/13131aa5-c6f7-4bef-8518-e92be1db4ad8',
-   'https://cdn.macbro.uz/macbro/cf510327-b4e8-4378-a001-cbd8779504b8',
-   'https://cdn.macbro.uz/macbro/edb6411f-3f34-47b1-a118-36045811f045'
-];
+let m = document.querySelector('.m');
+let width = 400;
 
-let goldBtn = document.querySelector('.gold');
-let grayBtn = document.querySelector('.gray');
-let cosmicBtn = document.querySelector('.cosmic');
-
-function getGold() {
-   imgMain.src = clMain[0];
+for (let i of obj.gold) {
+   console.log(i);
 }
 
-function getGray() {
-   imgMain.src = clMain[1];
-}
-
-function getCosmic() {
-   imgMain.src = clMain[2];
-}
-goldBtn.addEventListener('click', getGold);
-grayBtn.addEventListener('click', getGray);
-cosmicBtn.addEventListener('click', getCosmic);
+imgEl.forEach(item => {
+   item.addEventListener('click', (e) => {
+      m.style.left = `${width - item.name * width}px`;
+   })
+})
 
 // --------------------------
 
